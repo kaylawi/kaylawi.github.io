@@ -1,0 +1,38 @@
+@media only screen and(min-width: 650 px){
+
+
+.top-nav ul {
+
+	position:absolute;
+	right:0;
+	top:5%;
+}
+
+
+.top-nav ul li{
+
+	display: inline-block;
+
+}
+
+}
+
+
+@media only screen and(min-width: 1000 px){
+
+.top-nav ul li{
+
+display:inline-block;
+
+}
+
+.top-nav ul {
+
+	align-items: center;
+
+
+}
+
+
+
+
