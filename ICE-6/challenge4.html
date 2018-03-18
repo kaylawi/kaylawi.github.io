@@ -14,8 +14,40 @@
     <script type="text/javascript">
     function checkForm(){
     	// Write a function that displays the appropriate error message(s) if a field is left blank.  Make sure the form action is not performed if either field is blank.
-    }  
+        var fullname = document.getElementById("fullname").value.trim();
+        // trim only works on strings
+        var streetaddr = document.getElementById("streetaddr").value.trim(); 
+        var nameeromrmsg = document.getElementById("nameerrormsg");
+        var addrerrormsg = document.getElementbyId("addrerrormsg");
+
+        var isValid = true;
+
+        nameerrormsg.style.display = "none";
+        addrerrormsg.style.display = "none";
+
+        if(!fullname){
+
+            //Prevent form submission
+
+            nameerrormsg.style.display = "block"; //set 
+            console.log("full name");
+            isValid = false;
+        } 
+
+        if(!streetaddr){
+
+            //Prevent form submission 
+
+            adderrormsg.style.display = "block"; //set
+            console.log("address");
+            isValid = false;
+        }
+
+        return isValid;
+    }
+
     </script>
+    
 </head>
 <body>
     <h1>Challenge 4</h1>
