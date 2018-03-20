@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Challenge 3</title>
+  <meta charset="UTF-8">
+  <title>Challenge 3</title>
     <script type="text/javascript">
     function checkForm(){
-    	// Write a function that ensures at least one but ONLY one radio button is selected.  Make sure the form action is not performed if either field is blank.
-		} 
+      if (document.getElementById("opt-straw").checked && document.getElementById("opt-blue").checked){
+        console.log('both radios are checked')
+        return false;
+      }
+
+      if (!document.getElementById("opt-straw").checked && !document.getElementById("opt-blue").checked){
+        console.log('neither radios are checked')
+        return false;
+      }
+      return true;
+    }
     </script>
 </head>
 <body>
   <h1> Challenge 3</h1>
-	 <form action="challenge4.html" 
+   <form action="challenge4.html"
         onsubmit= "return checkForm()">
       <fieldset>
         <legend>Radio buttons and Check Boxes</legend>
         <div>
-          What's your favorite berry?: 
+          What's your favorite berry?:
           <label>
             <input type="radio" value = "s" id="opt-straw"> Strawberries
           </label>

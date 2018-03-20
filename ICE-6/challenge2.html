@@ -20,47 +20,17 @@ Now when you test your form, you'll notice that when you un-check your checkbox,
 Add an if-else statement to your setHomeAddress() function so that when the checkbox is un-checked the Home address field is reset to empty and enabled again.-->
 <html lang="en">
 <head>
-	<title>Challenge Two</title>
-  <style>
-  </style>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-  <script>
-    $(document).ready(function()) {
-
-      $('#emailfield').hide();
-      $('#subscribe').change(function()){
-        $('#emailfield').toggle();
-      });
-
-    });
-    
-    <script type="text/javascript">
-	   function setHomeAddress(){
-
-      if (document.getElementbyId("useBilling").checked){
-        document.getElementbyId("home").value = document.getElementById("billing").value;
-
-        document.getElementById("home").disabled = true;}
-
-        else {
-
-          document.getElementbyId("home").value = " ";
-          document.getElementbyId("home").disabled = false;
-        }      
-  
-
-     }
-    </script>
+  <meta charset="UTF-8">
+  <title>Challenge Two</title>
 </head>
 <body>
-    <h1>Challenge Two</h1>
-    <form action="challenge3.html">
-      <fieldset>
-        <legend>Billing Information</legend>
-        <div>
-          <label for ="billing">Billing Address:</label><br>
-          <textarea name="billingAdd" id="billing"></textarea>
+  <h1>Challenge Two</h1>
+  <form action="challenge3.html">
+  <fieldset>
+    <legend>Billing Information</legend>
+    <div>
+      <label for = "billing"> Billing Address:</label><br>
+  	 <textarea name="billingAdd" id="billing"></textarea>
           </label>
         </div>
 
@@ -73,5 +43,23 @@ Add an if-else statement to your setHomeAddress() function so that when the chec
         </div>
         <input type = "submit" value = "Go To Challenge 3">
       </fieldset>
+
+      <script type="text/javascript">
+       function setHomeAddress(){
+
+        if (document.getElementById("useBilling").checked){
+          document.getElementById("home").value = document.getElementById("billing").value;
+
+          document.getElementById("home").disabled = true;}
+
+          else {
+
+            document.getElementById("home").value = " ";
+            document.getElementById("home").disabled = false;
+          }
+
+
+       }
+      </script>
 </body>
 </html>
