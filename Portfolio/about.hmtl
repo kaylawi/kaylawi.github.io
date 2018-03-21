@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ 	<link rel="stylesheet" type="text/css" href="css/about.css"> 
+ 	<title> About </title>
+ 	<meta charset="UTF-8">
+ </head>
+
+ <body>
+ 	<header>
+ 		
+ 		<nav>
+ 		<a href="home.html"><strong>Home</strong></a>
+ 		<a href= "about.html"><strong>About</strong></a>
+ 		<a href= "projects.html"><strong>Projects</strong></a>
+ 		<a href= "resume.html"><strong>Resume</strong></a>
+ 		</nav>
+
+ 	</header>
+
+ 	<h1>  About Me </h1>
+
+ 		<h2> EXPERIENCE INCLUDE </h2>
+
+ 		<h3> TEACHING </h3>
+
+ 		<p> I have prior experience as a Teacher's assistant for a boot camp that focuses on web development and project management. This experience allows me to expose students to HTML,CSS, and Project Management. </p>
+
+ 		<h3> RESEARCH </h3>
+
+ 		<p> I have prior experience in research through research projects at University of Michigan Department of Otolaryngology - Head and Neck Surgery and University of Michigan Department of Emergency Medicine. With my experience, I have been exposed to VMware, Matlab, and Data analysis. </p>
+
+ 		<h3>  UX DESIGN  </h3>
+
+ 		<p> I have been exposed to Blender and Sketchup through prior classes and projects. I have been exposed to Autodesk from a prior intensive program. I have been exposed to Invision, SKetch, Figma from a personal project.  </p>
+
+ 		<h3> COMPUTER PROGRAMMING </h3>
+
+ 		<p> I have been exposed to C, C++, Python, and Javascript through various class I have taken. I am more comfortable with python. I have been exposed to Matlab through previous research jobs. I have been exposed to HTML and CSS out of interest, I self taught myself these languages.  </p>
+
+ 		<h3> TECH CONSULTING </h3>
+
+ 		<p> I have been exposed to resolving computer related issues at University of Michigan site computers. I have exposure to Windows and MacOS hardware and software diagnostics and repair.</p>
+
+
+
+</body>
+</html>
