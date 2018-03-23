@@ -1,5 +1,5 @@
-/**{ margin:0px;
-}*/
+*{ margin:0px;
+}
 
 body{
 
@@ -7,14 +7,14 @@ background-color:purple;
 
 }
 
-/*#wrap{
+#wrap{
 
 	width:80%;
 	margin:auto;
 }
 header {
 
-background-color: white;
+background-color: gray;
 border-bottom:none;
 color:black;
 text-align:right;
@@ -22,7 +22,7 @@ padding:5px;
 
 }
 
-nav{
+/*nav{
 
 background-color: purple;
 
