@@ -1,0 +1,34 @@
+/*Iphone 5/SE */ 
+
+@media only screen and(min-width:320 px){
+
+
+footer.projects{
+
+	position:relative;
+}
+
+footer.resume{
+
+	position:bottom;
+
+}
+
+/*Tablet devices */ 	
+
+@media only screen and(min-width:768 px){
+
+footer.projects{
+
+
+	position:relative;
+	bottom:50%;
+}
+
+
+@media only screen and(min-width: ){
+
+
+}
+
+
