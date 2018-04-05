@@ -1,6 +1,6 @@
 /*Iphone 5/SE */ 
 
-@media only screen and(min-width:320 px){
+@media only screen and (min-width:320px){
 
 
 footer.projects{
@@ -14,9 +14,41 @@ footer.resume{
 
 }
 
+footer{
+
+	width:100%;
+
+}
+
+.SI110{
+
+	width:50px; 
+	height:50px;
+}
+
+.resume{
+
+
+
+}
+
+}
 /*Tablet devices */ 	
 
-@media only screen and(min-width:768 px){
+@media only screen and (min-width:768px){
+
+	.body-image{
+
+		background-size:cover;
+	}
+
+
+#openNav{
+
+	display: none;
+}
+
+}
 
 footer.projects{
 
@@ -24,11 +56,15 @@ footer.projects{
 	position:relative;
 	bottom:50%;
 }
+}
 
+@media only screen and (min-width:1200px ){
 
-@media only screen and(min-width: ){
+	#openNav{
+
+	display: none;
+}
 
 
 }
-
 

@@ -6,9 +6,15 @@
 .body-image{
 
 	background: url("https://images.unsplash.com/photo-1488998427799-e3362cec87c3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e8b82dbd7fe9677e9218686a427ea6d7&auto=format&fit=crop&w=1296&q=60") center no-repeat; 
-	height:1080px;
+	height:100%;
 	width: 100%;
 	background-size: cover;
+	background-repeat: repeat;
+}
+
+
+#mySidebar {
+	background-color: white;
 }
 /*Grid*/
 
@@ -95,6 +101,19 @@ header h4{
 	/*include div */
 }
 
+/*RESUME*/
+
+*{
+
+	box-sizing:border-box;
+}
+
+img {
+
+	max-width:70%;
+	max-height:70%;
+} 
+
 /*---FOOTER---*/ 
 
 footer{
@@ -118,5 +137,6 @@ footer p{
 
 	padding-top: 20%
 	padding-bottom:20%;
+	position:absolute;
 
 }
