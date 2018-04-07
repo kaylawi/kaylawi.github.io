@@ -21,64 +21,62 @@
  		<header>
  			<h2>  Kayla Williams </h2>
 
- 			<!-- Sidebar -->
- 			<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+ 		<!--Sidebar Mobile View -->
+
+ 			<div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none" id="mySidebar">
   			<button class="w3-bar-item w3-button w3-large"
   			onclick="w3_close()">Close &times;</button>
-  			<a href="#" class="w3-bar-item w3-button">Link 1</a>
-  			<a href="#" class="w3-bar-item w3-button">Link 2</a>
-  			<a href="#" class="w3-bar-item w3-button">Link 3</a>
+  			<a href="index.html" class="w3-bar-item w3-button w3-teal">Home</a>
+  			<a href="about.html" class="w3-bar-item w3-button w3-teal">About Me </a>
+  			<a href="projects.html" class="w3-bar-item w3-button w3-teal">Project and Activities</a>
+  			<a href="resume.html" class="w3-bar-item w3-button w3-teal"> Resume </a>
 			</div>
 
 			<div id="main">
 
-		<div class="w3-teal">
-  		<button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
-  		<div class="w3-container">
+			<div class="w3-clear">
+  			<button id="openNav" class="w3-button w3-clear w3-xlarge" onclick="w3_open()">&#9776;</button>
+  			<div class="w3-container">
+  			
   			</div>
-		</div>
+  		</div>
+  		</div>
+			
 
-
-
- 		<!-- 
- 		<nav>
+     	<!-- Navigation Bar Large View --> 
+ 		
+ 		<nav class= "large-size">
  		<a href="index.html"><strong>Home</strong></a>
  		<a href= "about.html"><strong>About</strong></a>
  		<a href= "projects.html"><strong>Projects</strong></a>
  		<a href= "resume.html"><strong>Resume</strong></a>
- 		</nav> -->
-<!-- 
- 		<div class="topnav" id="myTopnav">
-  			<a href="#home" class="active">Home</a>
- 			<a href="#About Me">About Me</a>
- 			<a href="#Projects and Activities">Projects and Activities</a>
- 	  	
-  		<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-
-
-	    </div> -->
-
+ 		</nav>
  	
  		</header>
 
 
  	<p> Hello! Welcome to my page! I am currently in the School of Information at University of Michigan- Ann Arbor. I intend on majoring in User Experience. Feel Free to check out my projects and experience. </p>
 
- 	<footer class="footer bottom">
+ 	<footer class="footer home">
 		<p> &copy; Kayla Williams </p>
 	</footer>
+
+
 	<script>
-function w3_open() {
-  document.getElementById("main").style.marginLeft = "25%";
-  document.getElementById("mySidebar").style.width = "25%";
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("openNav").style.display = 'none';
+		function w3_open() {
+  			document.getElementById("main").style.marginRight = "25%";
+  			document.getElementById("mySidebar").style.width = "25%";
+  			document.getElementById("mySidebar").style.display = "block";
+  			document.getElementById("openNav").style.display = 'none';
+
 }
-function w3_close() {
-  document.getElementById("main").style.marginLeft = "0%";
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("openNav").style.display = "inline-block";
+		function w3_close() {
+  			document.getElementById("main").style.marginRight = "0%";
+  			document.getElementById("mySidebar").style.display = "none";
+  			document.getElementById("openNav").style.display = "inline-block";
 }
+
+	
 </script>
 </body>
 </html>

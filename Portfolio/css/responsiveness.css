@@ -3,33 +3,22 @@
 @media only screen and (min-width:320px){
 
 
-footer.projects{
-
-	position:relative;
-}
-
-footer.resume{
-
-	position:bottom;
-
-}
-
-footer{
-
-	width:100%;
-
-}
 
 .SI110{
 
 	width:50px; 
-	height:50px;
+	height:10px;
 }
 
-.resume{
 
+.vertical-menu{
 
+	display:none;
+}
 
+.large-size{
+
+	display:none;
 }
 
 }
@@ -42,20 +31,16 @@ footer{
 		background-size:cover;
 	}
 
+.large-size{
 
-#openNav{
+	display:block;
+}	
+
+	#openNav{
 
 	display: none;
 }
 
-}
-
-footer.projects{
-
-
-	position:relative;
-	bottom:50%;
-}
 }
 
 @media only screen and (min-width:1200px ){
@@ -64,6 +49,16 @@ footer.projects{
 
 	display: none;
 }
+
+	.vertical-menu{
+
+		display:none;
+	}
+
+	.large-size{
+
+		display:block;
+	}
 
 
 }

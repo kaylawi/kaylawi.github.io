@@ -13,9 +13,7 @@
 }
 
 
-#mySidebar {
-	background-color: white;
-}
+
 /*Grid*/
 
 .grid-left{
@@ -98,7 +96,7 @@ header h4{
 
 .resume-object {
 	width: 100%;
-	/*include div */
+	
 }
 
 /*RESUME*/
@@ -110,33 +108,60 @@ header h4{
 
 img {
 
-	max-width:70%;
-	max-height:70%;
+	max-width:85%;
+	max-height:85%;
 } 
 
 /*---FOOTER---*/ 
 
 footer{
 
-	display:block;
 	background-color:turquoise;
+	height: 4vh;
 	width:100%;
-	position:relative;
-	height: 5vh;
+	display:block;
 
 }
 
-footer.bottom{
+footer.home{
 
-	position:absolute;
 	bottom:0;
-}
-
-
-footer p{
-
-	padding-top: 20%
-	padding-bottom:20%;
 	position:absolute;
 
 }
+
+footer.about{
+
+	bottom:0;
+	position:absolute;
+}
+
+footer.projects{
+
+	bottom:0;
+	position:fixed;
+
+
+
+}
+
+/* Iframe  */
+
+.SI110{
+
+	position:absolute;
+	left:0px;
+	right:0px;
+	z-index:0;
+
+}
+
+.SI110 h4{
+
+
+	padding-left:80%;
+	padding:right:80%;
+}
+
+
+

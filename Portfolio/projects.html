@@ -6,6 +6,9 @@
  		<title> Portfolio </title>
  	
  		<link type="text/css" rel="stylesheet" href="css/style.css"/> 
+ 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ 		<link type="text/css" rel="stylesheet" href="css/responsiveness.css
+ 		"/>
  	
  </head>
 
@@ -13,19 +16,44 @@
  	<div id="wrap">
  		<header>
  			<h2> Projects </h2>
+
+ 			<!--Sidebar -->
+
+ 			<div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none" id="mySidebar">
+  			<button class="w3-bar-item w3-button w3-large"
+  			onclick="w3_close()">Close &times;</button>
+  			<a href="index.html" class="w3-bar-item w3-button w3-teal">Home</a>
+  			<a href="about.html" class="w3-bar-item w3-button w3-teal">About Me </a>
+  			<a href="projects.html" class="w3-bar-item w3-button w3-teal">Project and Activities</a>
+  			<a href="resume.html" class="w3-bar-item w3-button w3-teal"> Resume </a>
+			</div>
+
+			<div id="main">
+
+		<div class="w3-clear">
+  		<button id="openNav" class="w3-button w3-clear w3-xlarge" onclick="w3_open()">&#9776;</button>
+  		<div class="w3-container">
+  			</div>
+		</div> 
+	</div>
+
+
+     	<!-- Navigation Bar --> 
  		
- 		<nav>
+ 		<nav class= "large-size">
  		<a href="index.html"><strong>Home</strong></a>
  		<a href= "about.html"><strong>About</strong></a>
- 		<a href= "projects.html"><strong>Activities and Projects</strong></a>
+ 		<a href= "projects.html"><strong>Projects</strong></a>
  		<a href= "resume.html"><strong>Resume</strong></a>
  		</nav>
+ 	
+ 		
 
  		</header>
-</div>
- 	<div id="grid-box"> 
- 		<div class="grid-lefty">
- 			<div class="grid">
+			</div>
+ 				<div id="grid-box"> 
+ 					<div class="grid-lefty">
+ 						<div class="grid">
 
  				<h4> GEECS </h4> 
 
@@ -52,14 +80,29 @@
  			</div>
 
  			<div class ="SI110">
- 				<h4> Introduction to Information (SI 110) </h4>
- 			<iframe width="560" height="315" src="https://www.youtube.com/embed/BkG1j2DVHm0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+ 				<h4> Introduction to Information(SI110)</h4>
+ 				<p> This class introduced me to Human Computer Interactiona and sparked my interest in the School of Information. I learned a lot about technology and accessibility. This video introduces the idea of HCI and technology for people with disabilities. </p>
+ 					<iframe src="https://www.youtube.com/embed/BkG1j2DVHm0" allowfullscreen></iframe>
  			</div>
 
  		</div>
  	</div>
  </div>
-<footer class="footer projects">
-		<p> &copy; Kayla Williams </p>
-	</footer>
+		<footer class="footer projects">
+			<p> &copy; Kayla Williams </p>
+		</footer>
+
+		<script>
+		function w3_open() {
+  			document.getElementById("main").style.marginRight = "25%";
+  			document.getElementById("mySidebar").style.width = "25%";
+  			document.getElementById("mySidebar").style.display = "block";
+  			document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginRight = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
 </body>
