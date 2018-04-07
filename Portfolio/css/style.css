@@ -51,6 +51,22 @@ color:black;
 }
 
 
+h4 {
+
+	color:turquoise;
+}
+
+h3{
+
+	color:turquoise;
+}
+
+header h4{
+
+	color:black;
+}
+
+
 /*Navigation*/ 
 
 nav{
@@ -79,27 +95,12 @@ margin:0px;
 
 }
 
-h4 {
-
-	color:turquoise;
-}
-
-h3{
-
-	color:turquoise;
-}
-
-header h4{
-
-	color:black;
-}
+/*RESUME*/
 
 .resume-object {
 	width: 100%;
 	
 }
-
-/*RESUME*/
 
 *{
 
