@@ -1,17 +1,20 @@
 .photo-cell img{
 
-	border-color:blue;
+	border:solid blue;
 	padding:5%;
 	width:50%;
-	/*display:flex;
-	flex-direction: row;
+	display:inline-block;
+	vertical-align:middle;
+/*	flex-direction: row;
 	align-items: flex-start;*/
 /*	float:left;*/
 }
 
 .body-image{
 
-	/*background-image : url("/images/sun-pattern.png");*/
+/*	background-color:blue;*/
+
+	background-image:url("images/sun-pattern.png");
 	height:100%;
 	background-size:cover;
 	background-repeat: none;
