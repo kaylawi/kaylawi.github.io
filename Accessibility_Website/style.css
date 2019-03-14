@@ -1,4 +1,41 @@
+/* Background */
+
+body{
+    
+    background-color: lightblue; 
+
+}
+
+
 /* Navigation Bar */
+
+.container-fluid{
+
+    background-color:lightgray;
+
+}
+
+.container-fluid ul{
+
+    background-color:lightgray
+}
+
+.active{
+
+    background-color:lightgray;
+}
+
+.dropdown-toggle{
+
+    background-color:lightgray; 
+}
+
+ul.nav.navbar-nav{
+
+    background-color:lightgray; 
+}
+
+
 
 /* div.navbar ul {
 
@@ -30,3 +67,8 @@ li a:hover {
 
     background-color:black; 
 } */ 
+
+
+/* Mapping API */
+
+#mapid { height: 180px; }

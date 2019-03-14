@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+<title> Geocoding control </title>
+<meta name ='viewport' content = 'initial-scale=1, maximum-scale=1, user-sclable=no' />
+
+<!-- Load Leaflet from CDN -->
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+<script src= "https://unpkg.com/leaflet@1.0.3/dist/leaflet-src.js"> </script>
+
+<!-- Load Ersi Leaflet from CDN -->
+<script src= "https://unpkg.com/ersi-leaflet@2.0.8"></script>
+
+<!-- Load Ersi Leaflet Geocoder from CDN -->
+<link rel="stylesheet"href="https://unpkg.com/ersi-leaflet-geocoder@2.2.4/dist/ersi-leaflet-geocoder.css">
+<script src="https://unpkg.com/ersi-leaflet-geocoder@2.2.4"></script>
+
+<!-- Used for Mapping our own data -->
+<script src="jquery-2.1.2.min.js"></script>
+
+<style>
+    body {margin:0; padding:0; }
+    #map {position:absolute; top:0; bottom:0; right:0; left:0; }
+/* #mapid { height: 180px; } */
+</style>
+
+</head>
+
+<body>
+
+<div id="map"></div>
+
+<!-- // initalizing Map-->
+    
+
+<script>
+
+    var mymap = L.map('map').setView([42.2780, -83.7382],13);
+
+L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(mymap);
+
+
+    // User share location //  -->
+
+    // var searchControl = L.esri.Geocoding.geosearch().addTo(map); 
+
+    // Adding layergroups to search control 
+
+    // var results = L.layerGroup().addTo(map); 
+
+    // searchControl.on('results',function(data){
+    //     results.clearLayers(); 
+    //     for(var i = data.results.length - 1; i>=0; i--){
+    //         results.addLayer(L.marker(data.results[i].latlng));
+    //     }
+    // })
+
+//    Map our own data - load GeoJson from an external file // 
+
+
+// Leaflet on Mobile - Geolocation // 
+
+function onLocationfound(e){
+    var radius = e.accuracy/2;
+
+    L.marker(e.latling).addTo(map).bindPop("You are Here").openPopup();
+    L.circle(e.latlng).addTo(map);
+
+}
+
+map.on('locationfound', onLocationfound);
+
+// Error Message if Geolocation Failed //
+
+    function onLocationError(e){
+        alert(e.message);
+    }
+
+    map.on('locationerror',onLocationError);  
+
+
+</script>
+
+</body>
+
+</html>
+
+
